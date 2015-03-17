@@ -27,12 +27,16 @@ DEVICE_RESOLUTION := 540x960
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/elephone/p10c/bluetooth
 
-
+# Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.MT6582
+TARGET_PREBUILT_RECOVERY_KERNEL := $(DEVICE_FOLDER)/recovery/kernel
+BOARD_HAS_NO_SELECT_BUTTON := true
 
 #Need prebuilt kernel
 #TARGET_KERNEL_SOURCE := kernel/google/sprout
 #TARGET_KERNEL_CONFIG := cyanogenmod_sprout_defconfig
+
+# Kernel
 TARGET_NO_BOOTLOADER := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_FOLDER)/boot.mk
 TARGET_PREBUILT_KERNEL := $(DEVICE_FOLDER)/prebuilt/kernel
