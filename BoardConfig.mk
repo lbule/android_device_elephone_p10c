@@ -71,11 +71,12 @@ USE_CAMERA_STUB := true
 
 BOARD_RIL_CLASS := ../../../device/elephone/p10c/ril/
 
-BOARD_SEPOLICY_DIRS += \
-    device/elephone/p10c/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    file_contexts \
-    device.te \
-    app.te \
-    netd.te
+#Disable SELinux
+#BOARD_SEPOLICY_DIRS += \
+#    device/elephone/p10c/sepolicy
+#
+#BOARD_SEPOLICY_UNION += \
+#    file_contexts \
+#    device.te \
+#    app.te \
+#    netd.te
