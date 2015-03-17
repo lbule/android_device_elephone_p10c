@@ -24,13 +24,14 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 DEVICE_RESOLUTION := 480x854
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/google/sprout/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/elephone/p10c/bluetooth
 
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.sprout
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.MT6582
 
-TARGET_KERNEL_SOURCE := kernel/google/sprout
-TARGET_KERNEL_CONFIG := cyanogenmod_sprout_defconfig
+#Need prebuilt kernel
+#TARGET_KERNEL_SOURCE := kernel/google/sprout
+#TARGET_KERNEL_CONFIG := cyanogenmod_sprout_defconfig
 
 BOARD_RECOVERY_SWIPE := true
 
@@ -66,10 +67,10 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_USERIMAGES_USE_EXT4:=true
 USE_CAMERA_STUB := true
 
-BOARD_RIL_CLASS := ../../../device/google/sprout/ril/
+BOARD_RIL_CLASS := ../../../device/elephone/p10c/ril/
 
 BOARD_SEPOLICY_DIRS += \
-    device/google/sprout/sepolicy
+    device/elephone/p10c/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \

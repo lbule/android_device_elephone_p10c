@@ -106,4 +106,4 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_PACKAGES += Torch
 
 # call the proprietary setup
-$(call inherit-product, vendor/google/sprout/sprout-vendor.mk)
+$(call inherit-product, vendor/elephone/p10c/p10c-vendor.mk)

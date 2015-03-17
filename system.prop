@@ -1,5 +1,5 @@
 #
-# system.prop for sprout
+# system.prop for hongyu82_wet_kk
 #
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
@@ -7,7 +7,7 @@ rild.libargs=-d /dev/ttyC0
 
 # MTK, Infinity, 20090720 {
 wifi.interface=wlan0
-ro.hardware=sprout
+ro.hardware=hongyu82_wet_kk
 # MTK, Infinity, 20090720 }
 
 # MTK, mtk03034, 20101210 {
