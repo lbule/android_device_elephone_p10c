@@ -2,4 +2,5 @@
 /system		   ext4		/dev/block/mmcblk0p5 
 /data		   ext4		/dev/block/mmcblk0p7
 /cache		   ext4		/dev/block/mmcblk0p6
-/external_sd   vfat     /devices/platform/mtk-msdc.0/mmc_host                              flags=display="external_sd";storage;wipeingui;removable
+/external_sd   auto     /dev/block/mmcblk1p1 				/dev/block/mmcblk1                           flags=display="external_sd";storage;wipeingui;removable
+/sdcard		   auto 	/dev/block/mmcblk1p2
