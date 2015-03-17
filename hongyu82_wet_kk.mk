@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/init.protect.rc:root/init.protect.rc \
     $(LOCAL_PATH)/rootdir/root/init.modem.rc:root/init.modem.rc \
     $(LOCAL_PATH)/rootdir/root/factory_init.rc:root/factory_init.rc \
-    $(LOCAL_PATH)/rootdir/root/fstab.hongyu82_wet_kk:root/fstab.hongyu82_wet_kk \
+    $(LOCAL_PATH)/rootdir/root/fstab.MT6582:root/fstab.MT6582 \
     $(LOCAL_PATH)/rootdir/root/ueventd.hongyu82_wet_kk.rc:root/ueventd.hongyu82_wet_kk.rc \
     $(LOCAL_PATH)/rootdir/root/init.hongyu82_wet_kk.usb.rc:root/init.hongyu82_wet_kk.usb.rc
 
