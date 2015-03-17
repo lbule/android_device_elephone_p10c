@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/ueventd.hongyu82_wet_kk.rc:root/ueventd.hongyu82_wet_kk.rc \
     $(LOCAL_PATH)/rootdir/root/init.hongyu82_wet_kk.usb.rc:root/init.hongyu82_wet_kk.usb.rc
 
-DEVICE_PACKAGE_OVERLAYS := device/google/sprout/overlay
+DEVICE_PACKAGE_OVERLAYS := device/elephone/p10c/overlay
 	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
