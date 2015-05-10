@@ -526,6 +526,20 @@ public class MediaTekRIL extends RIL implements CommandsInterface {
         return rr;
     }
 
+	static String
+	requestToString(int request) {
+/*
+ cat libs/telephony/ril_commands.h \
+ | egrep "^ *{RIL_" \
+ | sed -re 's/\{RIL_([^,]+),[^,]+,([^}]+).+/case RIL_\1: return "\1";/'
+*/
+        switch(request) {
+            case RIL_REQUEST_SEND_USSD: return "SEND_USSD";
+            case RIL_REQUEST_CANCEL_USSD: return "CANCEL_USSD";
+            default: return "<unknown request>";
+        }
+    }
+	
     @Override
     protected void
     processUnsolicited (Parcel p) {
