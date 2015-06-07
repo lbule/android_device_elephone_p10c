@@ -33,12 +33,6 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 PRODUCT_PACKAGES += \
-    libmtkrilw
-
-PRODUCT_PACKAGES += \
-    gsm0710muxd
-
-PRODUCT_PACKAGES += \
     SIMSwitcher
 
 PRODUCT_COPY_FILES += \
@@ -49,12 +43,12 @@ PRODUCT_COPY_FILES += \
     device/elephone/P10C/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-    device/elephone/P10C/rootdir/fstab.mt6592:root/fstab.mt6592 \
-    device/elephone/P10C/rootdir/init.mt6592.rc:root/init.mt6592.rc \
-    device/elephone/P10C/rootdir/init.recovery.mt6592.rc:root/init.recovery.mt6592.rc \
-    device/elephone/P10C/rootdir/init.mt6592.usb.rc:root/init.mt6592.usb.rc \
+    device/elephone/P10C/rootdir/fstab.mt6582:root/fstab.mt6582 \
+    device/elephone/P10C/rootdir/init.mt6582.rc:root/init.mt6582.rc \
+    device/elephone/P10C/rootdir/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
+    device/elephone/P10C/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     device/elephone/P10C/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
-    device/elephone/P10C/rootdir/ueventd.mt6592.rc:root/ueventd.mt6592.rc \
+    device/elephone/P10C/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
