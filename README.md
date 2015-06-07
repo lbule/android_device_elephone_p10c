@@ -1,6 +1,12 @@
 # Build
 
+Этот репозиторий не предназначен для компиляции и является экспериментальным
+
+
 * Working
+  * Nothing
+
+* Not Working
   * RIL (First and Second SIM)
   * Wifi
   * Bluetooth
@@ -10,8 +16,6 @@
   * GPS (not completely tested)
   * NFC
   * OTG
-
-* Not Working
   * Dual SIM (Using both sim's at the same time isn't working.)
   * 3G on second SIM
   * Video recording
