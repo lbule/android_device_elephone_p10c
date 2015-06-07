@@ -2,7 +2,7 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES:= audio.cpp
+LOCAL_SRC_FILES:= audio.cpp mtkaudio.cpp
 
 LOCAL_MODULE := audio.primary.mt6582
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
