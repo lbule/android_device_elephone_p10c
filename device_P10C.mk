@@ -14,8 +14,6 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-PRODUCT_PACKAGES += \
-    libxlog
 
 PRODUCT_PACKAGES += \
     lights.mt6582
@@ -43,11 +41,16 @@ PRODUCT_COPY_FILES += \
     device/elephone/P10C/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-    device/elephone/P10C/rootdir/fstab.mt6582:root/fstab.mt6582 \
-    device/elephone/P10C/rootdir/init.mt6582.rc:root/init.mt6582.rc \
+	device/elephone/P10C/rootdir/factory_init.rc:root/factory_init.rc \
+	device/elephone/P10C/rootdir/fstab.mt6582:root/fstab.mt6582 \
+	device/elephone/P10C/rootdir/init.fuse.rc:root/init.fuse.rc\
+	device/elephone/P10C/rootdir/init.modem.rc:root/init.modem.rc \
+	device/elephone/P10C/rootdir/init.mt6582.rc:root/init.mt6582.rc \
+	device/elephone/P10C/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
+    device/elephone/P10C/rootdir/init.project.rc:root/init.project.rc \
+    device/elephone/P10C/rootdir/init.rc:root/init.rc \
     device/elephone/P10C/rootdir/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
-    device/elephone/P10C/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
-    device/elephone/P10C/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/elephone/P10C/rootdir/recovery.fstab:root/recovery.fstab \
     device/elephone/P10C/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
     $(LOCAL_KERNEL):kernel
 
