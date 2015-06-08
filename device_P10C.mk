@@ -30,8 +30,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
-PRODUCT_PACKAGES += \
-    SIMSwitcher
+# PRODUCT_PACKAGES += \
+#    SIMSwitcher
 
 PRODUCT_COPY_FILES += \
     device/elephone/P10C/configs/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
