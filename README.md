@@ -1,33 +1,33 @@
 # ENGLISH
 
 # GPS lib taken from ALPS KK
-#Build LOG:
-#
-#device/elephone/p10c/gps/gps_mtk.c: In function 'nmea_reader_parse':
-#device/elephone/p10c/gps/gps_mtk.c:1122:50: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[0] |= ( 1 << (sate_id-1) );
-#                                                  ^
-#device/elephone/p10c/gps/gps_mtk.c:1127:47: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[1] |= ( 1 << (sate_id-33) );
-#                                               ^
-#device/elephone/p10c/gps/gps_mtk.c:1132:35: error: subscripted value is neither array nor pointer nor vector
-#      		  r->sv_status.used_in_fix_mask[2] |= ( 1 << (sate_id-65) );
-#                                   ^
-#device/elephone/p10c/gps/gps_mtk.c:1137:35: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[3] |= ( 1 << (sate_id-97) );
-#                                   ^
-#device/elephone/p10c/gps/gps_mtk.c:1142:35: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[4] |= ( 1 << (sate_id-129) );
-#                                   ^
-#device/elephone/p10c/gps/gps_mtk.c:1147:35: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[5] |= ( 1 << (sate_id-161) );
-#                                   ^
-#device/elephone/p10c/gps/gps_mtk.c:1152:35: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[6] |= ( 1 << (sate_id-193) );
-#                                   ^
-#device/elephone/p10c/gps/gps_mtk.c:1157:35: error: subscripted value is neither array nor pointer nor vector
-#                  r->sv_status.used_in_fix_mask[7] |= ( 1 << (sate_id-225) );
-#                                   ^
+Build LOG:
+
+        # device/elephone/p10c/gps/gps_mtk.c: In function 'nmea_reader_parse':
+        # device/elephone/p10c/gps/gps_mtk.c:1122:50: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[0] |= ( 1 << (sate_id-1) );
+                                                  ^
+        # device/elephone/p10c/gps/gps_mtk.c:1127:47: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[1] |= ( 1 << (sate_id-33) );
+                                               ^
+        # device/elephone/p10c/gps/gps_mtk.c:1132:35: error: subscripted value is neither array nor pointer nor vector
+      		  r->sv_status.used_in_fix_mask[2] |= ( 1 << (sate_id-65) );
+                                   ^
+        # device/elephone/p10c/gps/gps_mtk.c:1137:35: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[3] |= ( 1 << (sate_id-97) );
+                                   ^
+        # device/elephone/p10c/gps/gps_mtk.c:1142:35: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[4] |= ( 1 << (sate_id-129) );
+                                   ^
+        # device/elephone/p10c/gps/gps_mtk.c:1147:35: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[5] |= ( 1 << (sate_id-161) );
+                                   ^
+        # device/elephone/p10c/gps/gps_mtk.c:1152:35: error: subscripted value is neither array nor pointer nor vector
+                  r->sv_status.used_in_fix_mask[6] |= ( 1 << (sate_id-193) );
+                                   ^
+        # device/elephone/p10c/gps/gps_mtk.c:1157:35: error: subscripted value is neither array nor pointer nor vector
+                  r->sv_status.used_in_fix_mask[7] |= ( 1 << (sate_id-225) );
+                                   ^
 
 
 # Build
@@ -89,33 +89,31 @@ Services requires root:
 # RUSSIAN Section
 
 # GPS библиотека взята из ALPS KK
-Ошибка в логе сборки (подумаю на ней позже):
-
-device/elephone/p10c/gps/gps_mtk.c: In function 'nmea_reader_parse':
-device/elephone/p10c/gps/gps_mtk.c:1122:50: error: subscripted value is neither array nor pointer nor vector
-                  r->sv_status.used_in_fix_mask[0] |= ( 1 << (sate_id-1) );
+Ошибка в логе сборки (подумаю на ней позже): 
+        # device/elephone/p10c/gps/gps_mtk.c: In function 'nmea_reader_parse':
+        # device/elephone/p10c/gps/gps_mtk.c:1122:50: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[0] |= ( 1 << (sate_id-1) );
                                                   ^
-device/elephone/p10c/gps/gps_mtk.c:1127:47: error: subscripted value is neither array nor pointer nor vector
-                  r->sv_status.used_in_fix_mask[1] |= ( 1 << (sate_id-33) );
+        # device/elephone/p10c/gps/gps_mtk.c:1127:47: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[1] |= ( 1 << (sate_id-33) );
                                                ^
-device/elephone/p10c/gps/gps_mtk.c:1132:35: error: subscripted value is neither array nor pointer nor vector
+        # device/elephone/p10c/gps/gps_mtk.c:1132:35: error: subscripted value is neither array nor pointer nor vector
       		  r->sv_status.used_in_fix_mask[2] |= ( 1 << (sate_id-65) );
                                    ^
-device/elephone/p10c/gps/gps_mtk.c:1137:35: error: subscripted value is neither array nor pointer nor vector
-                  r->sv_status.used_in_fix_mask[3] |= ( 1 << (sate_id-97) );
+        # device/elephone/p10c/gps/gps_mtk.c:1137:35: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[3] |= ( 1 << (sate_id-97) );
                                    ^
-device/elephone/p10c/gps/gps_mtk.c:1142:35: error: subscripted value is neither array nor pointer nor vector
-                  r->sv_status.used_in_fix_mask[4] |= ( 1 << (sate_id-129) );
+        # device/elephone/p10c/gps/gps_mtk.c:1142:35: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[4] |= ( 1 << (sate_id-129) );
                                    ^
-device/elephone/p10c/gps/gps_mtk.c:1147:35: error: subscripted value is neither array nor pointer nor vector
-                  r->sv_status.used_in_fix_mask[5] |= ( 1 << (sate_id-161) );
+        # device/elephone/p10c/gps/gps_mtk.c:1147:35: error: subscripted value is neither array nor pointer nor vector
+        #                   r->sv_status.used_in_fix_mask[5] |= ( 1 << (sate_id-161) );
                                    ^
-device/elephone/p10c/gps/gps_mtk.c:1152:35: error: subscripted value is neither array nor pointer nor vector
+        # device/elephone/p10c/gps/gps_mtk.c:1152:35: error: subscripted value is neither array nor pointer nor vector
                   r->sv_status.used_in_fix_mask[6] |= ( 1 << (sate_id-193) );
                                    ^
-device/elephone/p10c/gps/gps_mtk.c:1157:35: error: subscripted value is neither array nor pointer nor vector
-                  r->sv_status.used_in_fix_mask[7] |= ( 1 << (sate_id-225) );
-                                   ^
+        # device/elephone/p10c/gps/gps_mtk.c:1157:35: error: subscripted value is neither array nor pointer nor vector
+                  r->sv_status.used_in_fix_mask[7] |= ( 1 << (sate_id-225) );                               ^
 
 
 # Билд
