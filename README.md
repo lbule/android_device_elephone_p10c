@@ -44,7 +44,7 @@ Build LOG:
 
 * init
 
-        # repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
+        # repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1
         
         # repo sync
         
@@ -89,7 +89,8 @@ Services requires root:
 # RUSSIAN Section
 
 # GPS библиотека взята из ALPS KK
-Ошибка в логе сборки (подумаю на ней позже): 
+Ошибка в логе сборки (подумаю на ней позже):
+ 
         # device/elephone/p10c/gps/gps_mtk.c: In function 'nmea_reader_parse':
         # device/elephone/p10c/gps/gps_mtk.c:1122:50: error: subscripted value is neither array nor pointer nor vector
         #                   r->sv_status.used_in_fix_mask[0] |= ( 1 << (sate_id-1) );
