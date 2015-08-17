@@ -546,7 +546,9 @@ public class MediaTekRIL extends RIL implements CommandsInterface {
         int response = p.readInt();
 
         switch(response) {
-            case RIL_UNSOL_NEIGHBORING_CELL_INFO: ret = responseStrings(p); break;          
+            case RIL_UNSOL_NEIGHBORING_CELL_INFO: ret = responseStrings(p); break; 
+			case RIL_UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED: ret =  responseStrings(p); break;//ALPS00283717
+			case RIL_UNSOL_RESPONSE_NEW_BROADCAST_SMS:  ret =  responseString(p); break;
             case RIL_UNSOL_NETWORK_INFO: ret = responseStrings(p); break;           
             case RIL_UNSOL_CALL_FORWARDING: ret = responseInts(p); break;
             case RIL_UNSOL_CRSS_NOTIFICATION: ret = responseCrssNotification(p); break;
@@ -1073,14 +1075,14 @@ public class MediaTekRIL extends RIL implements CommandsInterface {
                     }
 
                     // don't print an error message after the the first time
-                    // or after the 8th time
+                    // or after the 16th time
 
-                    if (retryCount == 8) {
+                    if (retryCount == 16) {
                         Rlog.e (RILJ_LOG_TAG,
                             "Couldn't find '" + rilSocket
                             + "' socket after " + retryCount
                             + " times, continuing to retry silently");
-                    } else if (retryCount >= 0 && retryCount < 8) {
+                    } else if (retryCount >= 0 && retryCount < 16) {
                         Rlog.i (RILJ_LOG_TAG,
                             "Couldn't find '" + rilSocket
                             + "' socket; retrying after timeout");
